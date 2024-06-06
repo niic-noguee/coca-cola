@@ -1,0 +1,55 @@
+.contact-form {
+   margin-top: 50px;
+}
+
+.contact-form form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.inputBox {
+   position: relative;
+   width: 100%;
+}
+
+.inputBox input,
+.inputBox textarea {
+   width: 100%;
+   padding: 10px;
+   background: #222;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   resize: none;
+}
+
+.inputBox span {
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   color: #666;
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.inputBox input:focus + span,
+.inputBox textarea:focus + span,
+.inputBox input:valid + span,
+.inputBox textarea:valid + span {
+   top: -20px;
+   left: 10px;
+   color: #e51e2a;
+   font-size: 12px;
+}
+
+.inputBox input[type="submit"] {
+   background: #e51e2a;
+   color: #fff;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+
+.inputBox input[type="submit"]:hover {
+   background: #ff4d4d;
+}
